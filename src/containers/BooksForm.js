@@ -3,7 +3,7 @@ const BooksForm = () => {
   return (
     <form>
       <label htmlFor="title">
-        Surname
+        Title
         <input type="text" id="title" />
       </label>
       <select name="category" id="category">
@@ -11,6 +11,7 @@ const BooksForm = () => {
           <option value={category} key={String(index)}>{category}</option>
         ))}
       </select>
+      <button type="submit">Add Book</button>
     </form>
   );
 };
