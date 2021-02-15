@@ -24,6 +24,7 @@ const initialState = {
       category: 'Learning',
     },
   ],
+  filter: 'All',
 };
 const store = createStore(reducer, initialState);
 ReactDOM.render(
