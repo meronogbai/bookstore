@@ -14,7 +14,8 @@ const BooksList = ({ books }) => (
     ))}
   </table>
 );
-const mapStateToProps = state => ({ books: state });
+
+const mapStateToProps = state => ({ books: state.books });
 
 BooksList.propTypes = {
   books: PropTypes.arrayOf(PropTypes.shape({
@@ -23,4 +24,5 @@ BooksList.propTypes = {
     category: PropTypes.string.isRequired,
   })).isRequired,
 };
+
 export default connect(mapStateToProps)(BooksList);
