@@ -7,8 +7,8 @@ const BooksForm = ({ createBook }) => {
   const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
   const [title, setTitle] = useState('');
   const [category, setCategory] = useState('Learning');
-  const handleTitleChange = e => setTitle(e.target.value);
-  const handleCategoryChange = e => setCategory(e.target.value);
+  const handleTitleChange = e => { setTitle(e.target.value); };
+  const handleCategoryChange = e => { setCategory(e.target.value); };
   const handleSubmit = e => {
     e.preventDefault();
     createBook({
