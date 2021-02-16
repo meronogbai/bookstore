@@ -15,6 +15,7 @@ const BooksList = ({
   };
   return (
     <div>
+      <CategoryFilter changeFilter={handleFilterChange} />
       <table>
         <thead>
           <tr>
@@ -31,7 +32,6 @@ const BooksList = ({
             ))}
         </tbody>
       </table>
-      <CategoryFilter changeFilter={handleFilterChange} />
     </div>
   );
 };

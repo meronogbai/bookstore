@@ -23,14 +23,16 @@ const BooksForm = ({ createBook }) => {
     <form onSubmit={handleSubmit}>
       <div className="line" />
       <h2>ADD NEW BOOK</h2>
-      <input type="text" id="title" value={title} onChange={handleTitleChange} placeholder="Book Title" required />
-      <select name="category" id="category" value={category} onChange={handleCategoryChange} required>
-        <option value="" disabled selected>Category</option>
-        {categories.map((category, index) => (
-          <option value={category} key={String(index)}>{category}</option>
-        ))}
-      </select>
-      <button type="submit">ADD BOOK</button>
+      <div className="flex jc-between">
+        <input type="text" id="title" value={title} onChange={handleTitleChange} placeholder="Book Title" required />
+        <select name="category" id="category" value={category} onChange={handleCategoryChange} required>
+          <option value="" disabled selected>Category</option>
+          {categories.map((category, index) => (
+            <option value={category} key={String(index)}>{category}</option>
+          ))}
+        </select>
+        <button type="submit">ADD BOOK</button>
+      </div>
     </form>
   );
 };

@@ -56,6 +56,7 @@ button {
   color: #fff;
   border: none;
   border-radius: 5px;
+  padding: 5px 10px;
 }
 
 nav {
@@ -73,11 +74,13 @@ form {
   padding: 0 55px;
 }
 
-form input[type="text"],
-form select,
-form button {
-  margin-right: 20px;
-  padding: 5px 20px;
+form input[type="text"] {
+  width: 800px;
+}
+
+input,
+select {
+  padding: 5px 10px;
 }
 
 .flex {
