@@ -6,6 +6,7 @@
 
 body {
   margin: 0;
+  padding-bottom: 100px;
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -115,4 +116,111 @@ select {
 .line {
   margin: 40px 1px 29px 0;
   border: solid 1px #e8e8e8;
+}
+
+.list {
+  padding: 40px 50px 0 50px;
+}
+
+.book {
+  background-color: #fff;
+  padding: 15px 100px 15px 15px;
+  border-radius: 5px;
+  border: solid 1px #e8e8e8;
+  margin: 30px 0;
+}
+
+.category {
+  margin: 0 39px 0 0;
+  opacity: 0.5;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.title {
+  margin: 3px 323px 0 0;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: #121212;
+}
+
+.book-footer > * {
+  font-size: 14px;
+  padding: 0;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.book-footer button {
+  background-color: #fff;
+  border: none;
+  padding: 0;
+}
+
+.line-2 {
+  width: 2px;
+  height: 24px;
+  margin: 0 15px;
+  border: solid 1px #e8e8e8;
+}
+
+.author {
+  width: 107px;
+  height: 19px;
+  margin: 4px 0 0;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.current-chapter {
+  width: 126px;
+  height: 18px;
+  opacity: 0.5;
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.chapter {
+  width: 75px;
+  height: 21px;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  color: #121212;
+}
+
+.update-progress {
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
 }

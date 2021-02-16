@@ -14,24 +14,14 @@ const BooksList = ({
     changeFilter(filter);
   };
   return (
-    <div>
+    <div className="list">
       <CategoryFilter changeFilter={handleFilterChange} />
-      <table>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Title</th>
-            <th>Category</th>
-            <th>Remove Book</th>
-          </tr>
-        </thead>
-        <tbody>
-          {(filter === 'All' ? books : books.filter(book => book.category === filter))
-            .map(book => (
-              <Book book={book} key={book.id} removeBook={handleRemoveBook} />
-            ))}
-        </tbody>
-      </table>
+      <div className="books">
+        {(filter === 'All' ? books : books.filter(book => book.category === filter))
+          .map(book => (
+            <Book book={book} key={book.id} removeBook={handleRemoveBook} />
+          ))}
+      </div>
     </div>
   );
 };
