@@ -1,3 +1,9 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family:
@@ -24,4 +30,48 @@ code {
     Consolas,
     'Courier New',
     monospace;
+}
+
+nav {
+  padding: 23px 100px;
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+nav span {
+  margin: 0 0 0 40px;
+  font-size: 14px;
+}
+
+.flex {
+  display: flex;
+}
+
+.jc-between {
+  justify-content: space-between;
+}
+
+.a-center {
+  align-items: center;
+}
+
+.azure-text {
+  color: #0290ff;
+}
+
+.azure-bg {
+  background-color: #0290ff;
+}
+
+.oval {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  border: solid 1px #e8e8e8;
 }
