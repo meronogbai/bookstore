@@ -5,7 +5,7 @@ import Book from '../components/Book';
 import CategoryFilter from '../components/CategoryFilter';
 
 const BooksList = ({
-  books, removeBook, changeFilter,
+  books, filter, removeBook, changeFilter,
 }) => {
   const handleRemoveBook = book => {
     removeBook(book);
@@ -25,9 +25,10 @@ const BooksList = ({
           </tr>
         </thead>
         <tbody>
-          {books.map(book => (
-            <Book book={book} key={book.id} removeBook={handleRemoveBook} />
-          ))}
+          {(filter === 'All' ? books : books.filter(book => book.category === filter))
+            .map(book => (
+              <Book book={book} key={book.id} removeBook={handleRemoveBook} />
+            ))}
         </tbody>
       </table>
       <CategoryFilter changeFilter={handleFilterChange} />
@@ -51,6 +52,7 @@ BooksList.propTypes = {
     title: PropTypes.string.isRequired,
     category: PropTypes.string.isRequired,
   })).isRequired,
+  filter: PropTypes.string.isRequired,
   removeBook: PropTypes.func.isRequired,
   changeFilter: PropTypes.func.isRequired,
 };
