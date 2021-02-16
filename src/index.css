@@ -1,5 +1,12 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
+  padding-bottom: 100px;
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -14,6 +21,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
 }
 
 code {
@@ -24,4 +32,195 @@ code {
     Consolas,
     'Courier New',
     monospace;
+}
+
+h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+h2 {
+  width: 174px;
+  height: 24px;
+  margin: 29px 524px 19px 0;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #888;
+}
+
+button {
+  background-color: #0290ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+nav {
+  padding: 23px 50px;
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+nav span {
+  margin: 0 0 0 40px;
+  font-size: 14px;
+}
+
+form {
+  padding: 0 55px;
+}
+
+form input[type="text"] {
+  width: 800px;
+}
+
+input,
+select {
+  padding: 5px 10px;
+}
+
+.flex {
+  display: flex;
+}
+
+.jc-between {
+  justify-content: space-between;
+}
+
+.a-center {
+  align-items: center;
+}
+
+.azure-text {
+  color: #0290ff;
+}
+
+.azure-bg {
+  background-color: #0290ff;
+}
+
+.oval {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  border: solid 1px #e8e8e8;
+}
+
+.line {
+  margin: 40px 1px 29px 0;
+  border: solid 1px #e8e8e8;
+}
+
+.list {
+  padding: 40px 50px 0 50px;
+}
+
+.book {
+  background-color: #fff;
+  padding: 15px 100px 15px 15px;
+  border-radius: 5px;
+  border: solid 1px #e8e8e8;
+  margin: 30px 0;
+}
+
+.category {
+  margin: 0 39px 0 0;
+  opacity: 0.5;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.title {
+  margin: 3px 323px 0 0;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: #121212;
+}
+
+.book-footer > * {
+  font-size: 14px;
+  padding: 0;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.book-footer button {
+  background-color: #fff;
+  border: none;
+  padding: 0;
+}
+
+.line-2 {
+  width: 2px;
+  height: 24px;
+  margin: 0 15px;
+  border: solid 1px #e8e8e8;
+}
+
+.author {
+  width: 107px;
+  height: 19px;
+  margin: 4px 0 0;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.current-chapter {
+  width: 126px;
+  height: 18px;
+  opacity: 0.5;
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.chapter {
+  width: 75px;
+  height: 21px;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  color: #121212;
+}
+
+.update-progress {
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
 }

@@ -9,17 +9,17 @@ import reducer from './reducers';
 const initialState = {
   books: [
     {
-      id: Math.floor(Math.random() * 10),
+      id: Math.floor(Math.random() * 10000),
       title: 'The Hitchhiker\'s Guide to The Galaxy',
       category: 'Sci-Fi',
     },
     {
-      id: Math.floor(Math.random() * 10),
+      id: Math.floor(Math.random() * 10000),
       title: 'Frankenstein',
       category: 'Horror',
     },
     {
-      id: Math.floor(Math.random() * 10),
+      id: Math.floor(Math.random() * 10000),
       title: 'Algorithms Textbook',
       category: 'Learning',
     },
