@@ -20,6 +20,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
 }
 
 code {
@@ -32,19 +33,51 @@ code {
     monospace;
 }
 
-nav {
-  padding: 23px 100px;
-  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
-}
-
 h1 {
   margin: 0;
   font-size: 30px;
 }
 
+h2 {
+  width: 174px;
+  height: 24px;
+  margin: 29px 524px 19px 0;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #888;
+}
+
+button {
+  background-color: #0290ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+nav {
+  padding: 23px 50px;
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
 nav span {
   margin: 0 0 0 40px;
   font-size: 14px;
+}
+
+form {
+  padding: 0 55px;
+}
+
+form input[type="text"],
+form select,
+form button {
+  margin-right: 20px;
+  padding: 5px 20px;
 }
 
 .flex {
@@ -73,5 +106,10 @@ nav span {
   line-height: 30px;
   text-align: center;
   border-radius: 50%;
+  border: solid 1px #e8e8e8;
+}
+
+.line {
+  margin: 40px 1px 29px 0;
   border: solid 1px #e8e8e8;
 }
